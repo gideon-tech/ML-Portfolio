@@ -44,10 +44,10 @@ export default function Navbar() {
           <div className="flex items-center justify-between h-16 lg:h-20">
             <button
               onClick={() => scrollToSection("hero")}
-              className="text-xl font-display font-bold tracking-tight hover-elevate active-elevate-2 px-3 py-2 rounded-md transition-colors"
+              className="text-xl font-display font-bold tracking-tight hover-elevate active-elevate-2 px-3 py-2 rounded-md transition-all duration-300 group"
               data-testid="button-logo"
             >
-              <span className="bg-gradient-to-r from-primary via-red-600 to-primary bg-200% animate-gradient-shift bg-clip-text text-transparent">
+              <span className="inline-block bg-gradient-to-r from-primary via-red-600 to-primary bg-200% animate-gradient-shift bg-clip-text text-transparent animate-pulse-glow group-hover:animate-bounce-subtle transition-all duration-300 group-hover:scale-110">
                 MG
               </span>
             </button>
