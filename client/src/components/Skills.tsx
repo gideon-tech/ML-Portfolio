@@ -4,7 +4,7 @@ import { skills } from "@/data/portfolio-data";
 export default function Skills() {
   const categoryColors = {
     language: "bg-primary/10 text-primary border-primary/20",
-    framework: "bg-purple-500/10 text-purple-600 dark:text-purple-400 border-purple-500/20",
+    framework: "bg-red-500/10 text-red-600 dark:text-red-400 border-red-500/20",
     tool: "bg-blue-500/10 text-blue-600 dark:text-blue-400 border-blue-500/20",
     cloud: "bg-green-500/10 text-green-600 dark:text-green-400 border-green-500/20",
   };

@@ -37,7 +37,7 @@ export default function Hero() {
               </p>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-display font-bold tracking-tight">
                 Hi, I'm{" "}
-                <span className="bg-gradient-to-r from-primary via-purple-500 to-primary bg-200% animate-gradient-shift bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-primary via-red-600 to-primary bg-200% animate-gradient-shift bg-clip-text text-transparent">
                   Maku Gideon
                 </span>
               </h1>
@@ -109,9 +109,9 @@ export default function Hero() {
 
           <div className="relative flex items-center justify-center lg:justify-end animate-fade-in">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-purple-500/20 to-primary/20 rounded-full blur-3xl animate-pulse" />
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-red-600/20 to-primary/20 rounded-full blur-3xl animate-pulse" />
               <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden border-4 border-primary/20 shadow-2xl animate-float">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-purple-500/10" />
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-red-600/10" />
                 <img 
                   src={profileImage} 
                   alt="Maku Gideon - AI/ML Engineer" 

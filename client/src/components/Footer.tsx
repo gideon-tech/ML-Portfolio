@@ -24,7 +24,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
           <div className="space-y-4">
             <h3 className="text-2xl font-display font-bold">
-              <span className="bg-gradient-to-r from-primary via-purple-500 to-primary bg-200% animate-gradient-shift bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-primary via-red-600 to-primary bg-200% animate-gradient-shift bg-clip-text text-transparent">
                 Maku Gideon
               </span>
             </h3>

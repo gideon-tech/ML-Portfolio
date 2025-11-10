@@ -31,9 +31,10 @@ Preferred communication style: Simple, everyday language.
 - Form validation occurs client-side before submission
 
 **Design Philosophy**
-- Reference-based design inspired by modern portfolio sites (Linear, Stripe, Vercel)
+- Reference-based design inspired by nils.buysellflows.com with bold red and black color scheme
 - Typography: Inter (primary) and Space Grotesk (display/accent fonts)
-- Gradient text effects on key headings
+- Red accent color (HSL: 0 84% 50%) against deep black backgrounds for striking, professional look
+- Gradient text effects on key headings using red tones
 - Glassmorphism effects on navigation
 - Animation-driven UX with scroll animations and transitions
 

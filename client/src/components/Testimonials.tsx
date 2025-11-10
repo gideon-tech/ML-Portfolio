@@ -41,7 +41,7 @@ export default function Testimonials() {
                 </p>
 
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-purple-500 flex items-center justify-center text-primary-foreground font-semibold text-lg">
+                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-red-600 flex items-center justify-center text-primary-foreground font-semibold text-lg">
                     {testimonial.initial}
                   </div>
                   <div className="flex-1">

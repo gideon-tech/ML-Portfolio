@@ -1,7 +1,7 @@
 # Design Guidelines: Maku Gideon Portfolio
 
 ## Design Approach
-**Reference-Based + Modern SaaS Aesthetic**: Drawing inspiration from nils.buysellflows.com combined with contemporary portfolio sites like Linear, Stripe, and Vercel. Focus on clean minimalism with strategic animations, glassmorphism effects, and bold typography hierarchy.
+**Reference-Based + Modern SaaS Aesthetic**: Drawing inspiration from nils.buysellflows.com with a bold red and black color scheme. Focus on clean minimalism with strategic animations, glassmorphism effects, and bold typography hierarchy. The red serves as the primary accent color against deep black backgrounds for a striking, professional look.
 
 ## Typography System
 

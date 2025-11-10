@@ -46,7 +46,7 @@ export default function Navbar() {
               className="text-xl font-display font-bold tracking-tight hover-elevate active-elevate-2 px-3 py-2 rounded-md transition-colors"
               data-testid="button-logo"
             >
-              <span className="bg-gradient-to-r from-primary via-purple-500 to-primary bg-200% animate-gradient-shift bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-primary via-red-600 to-primary bg-200% animate-gradient-shift bg-clip-text text-transparent">
                 MG
               </span>
             </button>
