@@ -112,9 +112,8 @@ export default function Footer() {
         </div>
 
         <div className="pt-8 border-t border-border">
-          <p className="text-center text-sm text-muted-foreground flex items-center justify-center gap-2">
-            © {currentYear} Maku Gideon. Built with{" "}
-            <Heart className="w-4 h-4 text-primary fill-primary" /> using React & TypeScript
+          <p className="text-center text-sm text-muted-foreground">
+            © {currentYear} Maku Gideon. All rights reserved.
           </p>
         </div>
       </div>
