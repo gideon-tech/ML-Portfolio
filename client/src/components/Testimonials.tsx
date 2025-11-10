@@ -46,7 +46,7 @@ export default function Testimonials() {
                       src={testimonial.image}
                       alt={testimonial.name}
                       className="w-12 h-12 rounded-full object-cover border-2 border-primary/20"
-                      style={{ objectPosition: testimonial.name === "Scott Forsyth" ? "center 30%" : "center" }}
+                      style={{ objectPosition: testimonial.name === "Scott Forsyth" ? "center 20%" : "center" }}
                     />
                   ) : (
                     <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-red-600 flex items-center justify-center text-primary-foreground font-semibold text-lg">
