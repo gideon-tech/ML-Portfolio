@@ -87,22 +87,13 @@ export const testimonials: Testimonial[] = [
     quote: "The computer vision system Maku built for crop disease detection has transformed our operations. His expertise in deep learning and practical approach to problem-solving made the project a huge success.",
     tags: ["Computer Vision", "Deep Learning", "AgriTech"],
   },
-  {
-    id: "5",
-    name: "Amina Hassan",
-    role: "Director of Operations",
-    company: "Customer Success Hub",
-    initial: "A",
-    quote: "Maku created an NLP-powered customer support chatbot that handles 60% of our inquiries automatically. The quality of responses and understanding of context is remarkable. Implementation was smooth and professional.",
-    tags: ["NLP", "Chatbots", "Customer Support"],
-  },
 ];
 
 export const stats: Stat[] = [
   { value: "9", label: "Projects Completed", suffix: "+" },
   { value: "8", label: "Happy Clients", suffix: "+" },
-  { value: "100", label: "Models Trained", suffix: "+" },
-  { value: "3", label: "Years Experience", suffix: "+" },
+  { value: "20", label: "Models Trained", suffix: "+" },
+  { value: "2", label: "Years Experience", suffix: "+" },
 ];
 
 export const skills: Skill[] = [
@@ -119,6 +110,7 @@ export const skills: Skill[] = [
   { name: "FastAPI", category: "framework" },
   { name: "Docker", category: "tool" },
   { name: "AWS", category: "cloud" },
+  { name: "Azure", category: "cloud" },
   { name: "Git", category: "tool" },
   { name: "Jupyter", category: "tool" },
   { name: "SQL", category: "language" },
