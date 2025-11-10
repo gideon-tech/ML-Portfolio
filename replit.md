@@ -33,7 +33,10 @@ Preferred communication style: Simple, everyday language.
 **Design Philosophy**
 - Reference-based design inspired by nils.buysellflows.com with bold red and black color scheme
 - Typography: Inter (primary) and Space Grotesk (display/accent fonts)
-- Red accent color (HSL: 0 84% 50%) against deep black backgrounds for striking, professional look
+- Red accent color (HSL: 0 84% 50%) works in both light and dark modes
+- Dark mode: Red against deep black backgrounds for striking, professional look
+- Light mode: Red accents on clean white background for accessibility
+- Theme toggle button in navbar allows seamless switching between modes
 - Gradient text effects on key headings using red tones
 - Glassmorphism effects on navigation
 - Animation-driven UX with scroll animations and transitions

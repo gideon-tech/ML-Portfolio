@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ThemeToggle } from "@/components/ThemeToggle";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -64,7 +65,8 @@ export default function Navbar() {
               ))}
             </div>
 
-            <div className="hidden md:block">
+            <div className="hidden md:flex items-center gap-2">
+              <ThemeToggle />
               <Button
                 onClick={() => scrollToSection("contact")}
                 variant="default"
@@ -75,17 +77,20 @@ export default function Navbar() {
               </Button>
             </div>
 
-            <button
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="md:hidden p-2 hover-elevate active-elevate-2 rounded-md"
-              data-testid="button-mobile-menu"
-            >
-              {isMobileMenuOpen ? (
-                <X className="w-6 h-6" />
-              ) : (
-                <Menu className="w-6 h-6" />
-              )}
-            </button>
+            <div className="flex md:hidden items-center gap-2">
+              <ThemeToggle />
+              <button
+                onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                className="p-2 hover-elevate active-elevate-2 rounded-md"
+                data-testid="button-mobile-menu"
+              >
+                {isMobileMenuOpen ? (
+                  <X className="w-6 h-6" />
+                ) : (
+                  <Menu className="w-6 h-6" />
+                )}
+              </button>
+            </div>
           </div>
         </div>
       </nav>
