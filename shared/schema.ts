@@ -25,6 +25,7 @@ export interface Testimonial {
   quote: string;
   tags: string[];
   initial: string;
+  image?: string;
 }
 
 export interface Stat {

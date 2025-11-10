@@ -41,9 +41,17 @@ export default function Testimonials() {
                 </p>
 
                 <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-red-600 flex items-center justify-center text-primary-foreground font-semibold text-lg">
-                    {testimonial.initial}
-                  </div>
+                  {testimonial.image ? (
+                    <img 
+                      src={testimonial.image}
+                      alt={testimonial.name}
+                      className="w-12 h-12 rounded-full object-cover border-2 border-primary/20"
+                    />
+                  ) : (
+                    <div className="w-12 h-12 rounded-full bg-gradient-to-br from-primary to-red-600 flex items-center justify-center text-primary-foreground font-semibold text-lg">
+                      {testimonial.initial}
+                    </div>
+                  )}
                   <div className="flex-1">
                     <p className="font-semibold text-foreground">
                       {testimonial.name}

@@ -1,5 +1,7 @@
 import type { Service, Testimonial, Stat, Skill, ContactInfo } from "@shared/schema";
 import { Brain, Cpu, Eye, MessageSquare, TrendingUp, Zap } from "lucide-react";
+import scottImage from "@assets/AT1A5059-Edit_1762770501233.jpg";
+import jonnyImage from "@assets/jonny_1762770509505.jpeg";
 
 export const services: Service[] = [
   {
@@ -53,6 +55,7 @@ export const testimonials: Testimonial[] = [
     role: "Software Engineer",
     company: "Tech Solutions Ltd",
     initial: "J",
+    image: jonnyImage,
     quote: "I had the pleasure of working with Maku Gideon on several software development projects and I was consistently impressed by his technical skills, attention to detail and commitment to delivering high-quality results. They're proactive in finding solutions, great at collaborating with the team, and always bring creative ideas to the table.",
     tags: ["Python", "TensorFlow", "ML Models"],
   },
@@ -62,6 +65,7 @@ export const testimonials: Testimonial[] = [
     role: "CEO & Co-founder",
     company: "Kitchen Copilot Inc.",
     initial: "S",
+    image: scottImage,
     quote: "I interacted with Gideon in two contexts. I was a mentor for Gideon for a year, and I recently brought him on as an IT and developer intern at Kitchen Copilot Inc. Gideon has a lot of talent and potential. He's going somewhere in life, and it is a privilege to be a part of that journey. During the mentorship, Gideon consistently delivered homework assignments above expectations.",
     tags: ["AI Development", "Problem Solving", "Innovation"],
   },
