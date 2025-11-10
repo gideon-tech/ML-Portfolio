@@ -24,6 +24,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
         const { data, error } = await resend.emails.send({
           from: 'Portfolio Contact <onboarding@resend.dev>',
           to: ['paintingislife592@gmail.com'],
+          replyTo: validatedData.email,
           subject: `Portfolio Contact: ${validatedData.subject}`,
           html: `
             <h2>New Contact Form Submission</h2>

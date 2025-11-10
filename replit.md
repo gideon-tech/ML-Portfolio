@@ -90,9 +90,19 @@ Preferred communication style: Simple, everyday language.
 2. Client-side validation via Zod schema (`contactFormSchema`)
 3. Form data submitted to `POST /api/contact` endpoint
 4. Server validates data again using same Zod schema
-5. Currently logs submission to console (no database persistence)
-6. Returns success/error response to client
-7. Client shows toast notification via shadcn toast component
+5. Email sent via **Resend** to paintingislife592@gmail.com with form details
+6. Reply-To header set to sender's email for easy responses
+7. Returns success/error response to client
+8. Client shows toast notification via shadcn toast component
+
+**Email Integration**:
+- Service: **Resend** (resend.com)
+- From: `Portfolio Contact <onboarding@resend.dev>`
+- To: `paintingislife592@gmail.com`
+- Reply-To: Sender's email address from form
+- Format: HTML email with structured contact information
+- API Key: Stored in `RESEND_API_KEY` environment secret
+- Free tier: 3,000 emails/month
 
 ## External Dependencies
 
@@ -128,6 +138,7 @@ Preferred communication style: Simple, everyday language.
 - **Drizzle ORM**: TypeScript ORM
 - **@neondatabase/serverless**: PostgreSQL driver for Neon
 - **connect-pg-simple**: PostgreSQL session store (configured but not actively used)
+- **Resend**: Transactional email service for contact form submissions
 
 ### Development Tools
 - **tsx**: TypeScript execution for development
