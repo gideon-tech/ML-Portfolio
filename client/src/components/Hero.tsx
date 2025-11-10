@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { ChevronDown, Github, Linkedin, Mail } from "lucide-react";
+import profileImage from "@assets/makugideon_1762770047351.png";
 
 export default function Hero() {
   const [currentRole, setCurrentRole] = useState(0);
@@ -111,14 +112,11 @@ export default function Hero() {
               <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-purple-500/20 to-primary/20 rounded-full blur-3xl animate-pulse" />
               <div className="relative w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden border-4 border-primary/20 shadow-2xl animate-float">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-purple-500/10" />
-                <div className="w-full h-full bg-gradient-to-br from-primary/5 to-purple-500/5 flex items-center justify-center">
-                  <div className="text-center space-y-4">
-                    <div className="w-32 h-32 mx-auto rounded-full bg-gradient-to-br from-primary to-purple-500 flex items-center justify-center text-6xl font-bold text-primary-foreground">
-                      MG
-                    </div>
-                    <p className="text-sm font-medium text-muted-foreground">AI/ML Engineer</p>
-                  </div>
-                </div>
+                <img 
+                  src={profileImage} 
+                  alt="Maku Gideon - AI/ML Engineer" 
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>
