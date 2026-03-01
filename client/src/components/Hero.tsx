@@ -136,8 +136,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7, duration: 0.5 }}
             >
-              I'm an AI/ML Engineer building intelligent systems that reshape industries —
-              from education and finance to business automation and beyond.
+              I'm an AI/ML engineer — I love shipping ideas into real products, using AI along the way, and contributing to open source when I can.
             </motion.p>
 
             {/* CTA buttons */}
