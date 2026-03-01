@@ -36,7 +36,8 @@ export interface Stat {
 
 export interface Skill {
   name: string;
-  category: 'language' | 'framework' | 'tool' | 'cloud';
+  category: 'language' | 'framework' | 'tool' | 'cloud' | 'mobile';
+  level: number;
 }
 
 export interface ContactInfo {
@@ -45,4 +46,16 @@ export interface ContactInfo {
   value: string;
   href?: string;
   icon: string;
+}
+
+export interface Project {
+  id: string;
+  title: string;
+  description: string;
+  tags: string[];
+  github?: string;
+  live?: string;
+  image?: string;
+  featured?: boolean;
+  category: 'ml' | 'cv' | 'nlp' | 'automation' | 'analytics';
 }

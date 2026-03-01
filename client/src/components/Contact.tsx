@@ -78,8 +78,8 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-5 gap-8 lg:gap-12">
-          <div className="lg:col-span-2 space-y-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12">
+          <div className="md:col-span-1 lg:col-span-2 space-y-6">
             {contactInfo.map((info, index) => {
               const Icon = iconMap[info.icon as keyof typeof iconMap];
               const content = (
@@ -121,7 +121,7 @@ export default function Contact() {
             })}
           </div>
 
-          <div className="lg:col-span-3">
+          <div className="md:col-span-1 lg:col-span-3">
             <Card className="p-8">
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">

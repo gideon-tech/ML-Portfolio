@@ -28,6 +28,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
           subject: `Portfolio Contact: ${validatedData.subject}`,
           html: `
             <h2>New Contact Form Submission</h2>
+       
             <p><strong>From:</strong> ${validatedData.name}</p>
             <p><strong>Email:</strong> ${validatedData.email}</p>
             <p><strong>Subject:</strong> ${validatedData.subject}</p>

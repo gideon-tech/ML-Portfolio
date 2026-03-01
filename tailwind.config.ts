@@ -6,12 +6,11 @@ export default {
   theme: {
     extend: {
       borderRadius: {
-        lg: ".5625rem", /* 9px */
-        md: ".375rem", /* 6px */
-        sm: ".1875rem", /* 3px */
+        lg: ".5625rem",
+        md: ".375rem",
+        sm: ".1875rem",
       },
       colors: {
-        // Flat / base colors (regular buttons)
         background: "hsl(var(--background) / <alpha-value>)",
         foreground: "hsl(var(--foreground) / <alpha-value>)",
         border: "hsl(var(--border) / <alpha-value>)",
@@ -83,10 +82,10 @@ export default {
         },
       },
       fontFamily: {
-        sans: ["Inter", "var(--font-sans)"],
-        display: ["Space Grotesk", "Inter", "var(--font-sans)"],
+        sans: ["Geist Sans", "var(--font-sans)"],
+        display: ["Geist Sans", "var(--font-sans)"],
         serif: ["var(--font-serif)"],
-        mono: ["var(--font-mono)"],
+        mono: ["Geist Mono", "var(--font-mono)"],
       },
       keyframes: {
         "accordion-down": {
@@ -118,18 +117,46 @@ export default {
           "50%": { transform: "translateY(-10px)" },
         },
         "pulse-glow": {
-          "0%, 100%": { 
-            filter: "brightness(1) drop-shadow(0 0 0px rgba(239, 68, 68, 0))",
+          "0%, 100%": {
+            filter: "brightness(1) drop-shadow(0 0 0px rgba(0, 209, 220, 0))",
             transform: "scale(1)"
           },
-          "50%": { 
-            filter: "brightness(1.2) drop-shadow(0 0 20px rgba(239, 68, 68, 0.6))",
+          "50%": {
+            filter: "brightness(1.15) drop-shadow(0 0 20px rgba(0, 209, 220, 0.55))",
             transform: "scale(1.05)"
           },
         },
         "bounce-subtle": {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-5px)" },
+        },
+        "blink": {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0" },
+        },
+        "glow-border": {
+          "0%, 100%": { boxShadow: "0 0 5px rgba(0, 209, 220, 0.1)" },
+          "50%": { boxShadow: "0 0 20px rgba(0, 209, 220, 0.35), 0 0 40px rgba(0, 209, 220, 0.1)" },
+        },
+        "slide-up-reveal": {
+          "from": { transform: "translateY(100%)" },
+          "to": { transform: "translateY(0)" },
+        },
+        "spotlight": {
+          "0%": { opacity: "0", transform: "translate(-72%, -62%) scale(0.5)" },
+          "100%": { opacity: "1", transform: "translate(-50%,-40%) scale(1)" },
+        },
+        "shimmer": {
+          "from": { backgroundPosition: "0 0" },
+          "to": { backgroundPosition: "-200% 0" },
+        },
+        "text-reveal": {
+          "0%": { opacity: "0", transform: "translateY(100%)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+        "border-glow": {
+          "0%, 100%": { opacity: "0.5" },
+          "50%": { opacity: "1" },
         },
       },
       animation: {
@@ -142,6 +169,12 @@ export default {
         "float": "float 3s ease-in-out infinite",
         "pulse-glow": "pulse-glow 3s ease-in-out infinite",
         "bounce-subtle": "bounce-subtle 2s ease-in-out infinite",
+        "blink": "blink 1s step-end infinite",
+        "glow-border": "glow-border 2.5s ease-in-out infinite",
+        "spotlight": "spotlight 2s ease .75s 1 forwards",
+        "shimmer": "shimmer 2s linear infinite",
+        "text-reveal": "text-reveal 0.5s ease forwards",
+        "border-glow": "border-glow 2s ease-in-out infinite",
       },
       backgroundSize: {
         "200%": "200% 200%",
