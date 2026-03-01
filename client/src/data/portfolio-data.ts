@@ -1,4 +1,4 @@
-import type { Service, Testimonial, Stat, Skill, ContactInfo, Project } from "@shared/schema";
+import type { Service, Testimonial, Stat, Skill, ContactInfo, Project, Education, Experience, Certificate } from "@shared/schema";
 import { Brain, Cpu, Eye, MessageSquare, TrendingUp, Zap } from "lucide-react";
 import scottImage from "@assets/AT1A5059-Edit_1762770501233.jpg";
 import jonnyImage from "@assets/jonny_1762770509505.jpeg";
@@ -127,6 +127,57 @@ export const contactInfo: ContactInfo[] = [
     value: "blog.makugideon.dev",
     href: "https://blog.makugideon.dev",
     icon: "BookOpen",
+  },
+];
+
+export const education: Education[] = [
+  {
+    institution: "ISBAT University",
+    degree: "Bachelor of Science",
+    field: "Artificial Intelligence & Machine Learning",
+    gpa: "4.31",
+    location: "Kampala, Uganda",
+    startDate: "Sept 2024",
+    endDate: "Aug 2027",
+  },
+];
+
+export const experiences: Experience[] = [
+  {
+    title: "Junior AI/ML Engineer Intern",
+    company: "Kitchen Copilot Inc.",
+    companyLink: "https://kitchencopilot.com",
+    location: "Remote",
+    startDate: "Jul 2025",
+    endDate: "Nov 2025",
+    points: [
+      "Led food-logging research and system design, evaluating multiple third-party nutrition platforms and building a production-ready RESTful food-analysis endpoint using Passio.ai.",
+      "Engineered automation workflows in n8n, streamlining internal operations and reducing manual processing time by 20%.",
+      "Integrated and consumed REST APIs to connect app features with external services, enhancing product functionality.",
+      "Produced comprehensive documentation, research reports, and technical notes communicating findings and integration strategies to stakeholders.",
+      "Architected enhancements enabling users to embed multiple recipe photos directly into email bodies, improving the platform's recipe-sharing experience.",
+    ],
+  },
+];
+
+export const certificates: Certificate[] = [
+  {
+    name: "Huawei Certified ICT Associate — Artificial Intelligence",
+    issuer: "Huawei",
+    date: "November 2025",
+    highlights: [
+      "AI & ML fundamentals: supervised/unsupervised learning, neural networks",
+      "Data preprocessing, feature extraction, and classical AI workflows",
+    ],
+  },
+  {
+    name: "AI Engineering Bootcamp",
+    issuer: "365 Careers",
+    date: "November 2025",
+    highlights: [
+      "Generative AI, NLP, LLMs, LangChain, and vector databases",
+      "Hands-on with HuggingFace, Pinecone, transformers, and speech recognition",
+    ],
   },
 ];
 

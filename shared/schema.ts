@@ -48,6 +48,34 @@ export interface ContactInfo {
   icon: string;
 }
 
+export interface Education {
+  institution: string;
+  degree: string;
+  field: string;
+  gpa: string;
+  location: string;
+  startDate: string;
+  endDate: string;
+}
+
+export interface Experience {
+  title: string;
+  company: string;
+  companyLink?: string;
+  location: string;
+  startDate: string;
+  endDate: string;
+  points: string[];
+}
+
+export interface Certificate {
+  name: string;
+  issuer: string;
+  date: string;
+  link?: string;
+  highlights: string[];
+}
+
 export interface Project {
   id: string;
   title: string;
